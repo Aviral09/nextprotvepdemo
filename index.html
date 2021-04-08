@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Demo App</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/calipho-sib/feature-viewer@v1.0.6/dist/feature-viewer.min.css"
+		/>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+		<script
+			src="https://cdn.jsdelivr.net/gh/calipho-sib/feature-viewer@v1.0.6/dist/feature-viewer.bundle.js"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/gh/calipho-sib/feature-viewer@v1.0.6/dist/feature-viewer.nextprot.js"
+			defer
+		></script>
+		<script src="./index.js" defer></script>
+	</head>
+	<body>
+    <div class="App">
+      <header class="App-header">
+        <p>
+          This is a demo for GSoC Project for frontend of VEP neXtProt plugin.
+        </p>
+      </header>
+      <div class="App-body">
+        <div>
+          <p>
+			      Select chromosome and accession from the dropdown to visualise data:
+		      </p>
+        <form>
+          <label for="accession">Enter accession number here</label>
+          <input type="text" id="accession" placeholder="e.g NX_P01308">
+          <input type="button" id="viewButton" value="View Feature" onclick="viewFeature(accession)">
+        </form>
+      </div>
+      </div>
+		<div id="fv2"></div>
+	</body>
+</html>

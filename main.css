@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+	height: 100vh;
+	background-color: #282c34;
+	padding: 1rem;
+	padding-top: 0;
+	font-size: calc(10px + 2vmin);
+}
+
+.App-header {
+	height: 10vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.App-header p {
+	margin-top: 1rem;
+}
+.App-body {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	justify-content: center;
+}
+
+#accession{
+  width: 20vw;
+  padding: auto;
+	margin: auto;
+	justify-content: space-between;
+	border: 1px solid #61dafb;
+	border-radius: 10px;
+	color: black;
+}
+
+#viewButton {
+	width: 20vw;
+  padding: auto;
+	margin: auto;
+	justify-content: space-between;
+	border: 1px solid #61dafb;
+	border-radius: 10px;
+	background-color: #61a4fb;
+	color: white;
+}
+
+#fv2{
+  margin-top: 5rem;
+  font-size: larger;
+  color: black;
+  background-color: whitesmoke;
+}
